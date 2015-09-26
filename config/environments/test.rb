@@ -14,6 +14,7 @@ Rails.application.configure do
 
   # Configure static file server for tests with Cache-Control for performance.
   config.serve_static_files   = true
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.static_cache_control = 'public, max-age=3600'
 
   # Show full error reports and disable caching.
